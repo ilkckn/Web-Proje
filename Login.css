@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+    font-family: 'K2D', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.background img{
+    width: 90rem;
+}
+.container{
+    width: 45rem;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    background-color: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(10px);
+    border-radius: 2rem;
+    padding-top: 10rem;
+}
+/* -------------Logo------------ */
+.container .logo{
+    width: 17rem;
+}
+/* -------------Login Text------------ */
+.container h1{
+    font-family: 'K2D', sans-serif;
+    font-size: 5.5rem;
+    font-weight: 700;
+    color: #A65F37;
+    letter-spacing: .1rem;
+    margin-bottom: 2.5rem;
+}
+/* -------------All Info's------------ */
+.infos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* -------------Inputs------------ */
+.infos .inputs{
+    position: relative;
+    width: 45rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+/* -------------Username and Password Input------------ */
+.infos .inputs .username>input, .password>input{
+    width: 35rem;
+    height: 4.5rem;
+    border: 1px solid #D9AC84;
+    border-radius: 5rem;
+    background-color: transparent;
+    outline: none;
+    color: #D9AC84;
+    padding-left: 2rem;
+}
+.infos .inputs .username>input::placeholder, .password>input::placeholder{
+    color: #D9AC84;
+    letter-spacing: .06rem;
+    font-weight: 100;
+}
+.inputs .fa-user{
+    position: absolute;
+    top: 1.5rem;
+    right: 8rem;
+    font-size: 1.3rem;
+    color: #D9985F;
+}
+.inputs .fa-unlock{
+    position: absolute;
+    top: 7.5rem;
+    right: 8rem;
+    font-size: 1.3rem;
+    color: #D9985F;
+}
+/* -------------Remember me and Forgot Password------------ */
+.infos .remember-forgot{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    padding: 0 2.5rem; 
+}
+.remember-forgot .checkbox-rememberme{
+    height: 2rem;
+    color: #D9AC84;
+    display: flex;
+    justify-content: center;
+    gap: .3rem;
+    letter-spacing: .6px;
+}
+.remember-forgot p a{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #A65F37;
+}
+/* -------------Login Button------------ */
+.login-button{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.login-button>div{
+    width: 55%;
+    height: 4rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    background-image: linear-gradient(to right, #D34B0C, #FF7E0E);
+    box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.502);
+    border-radius: 5rem;
+    border: none;
+    cursor: pointer;
+}
+.login-button>div a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #FFDBB3;
+    padding-top: .5rem;
+}
+/* .login-button>div a:hover{
+    width: 100%;
+    height: 4rem;
+    background-image: linear-gradient(to right, #FFB561, #DB8F56);
+    border-radius: 5rem;
+    color: #FFDBB3;
+    border: none;
+} */
+/* -------------Have an account and Register------------ */
+.have-an-account{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+.have-an-account a{
+    text-decoration: none;
+    color: #A65F37;
+    font-weight: bold;
+}
